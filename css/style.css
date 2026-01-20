@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img,
+iframe,
+input,
+a {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  height: 6000px;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 45.6px;
+}
+
+header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  transition: all 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+header.active {
+  border-color: rgba(0, 27, 55, 0.1019607843);
+}
+header .inner {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  margin-right: auto;
+}
+#logo img {
+  height: 20px;
+  width: auto;
+  padding: 12px 0;
+}
+
+#gnb ul {
+  display: flex;
+}
+#gnb li {
+  padding: 0 8px;
+}
+#gnb a {
+  padding: 12px 10px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #4e5768;
+  border-radius: 8px;
+}
+#gnb a:hover {
+  background: rgba(2, 32, 71, 0.0509803922);
+  color: #0056b3;
+}
+
+#lang {
+  margin-left: 44px;
+}
+#lang ul {
+  display: flex;
+}
+#lang li {
+  padding: 0 8px;
+}
+#lang a {
+  padding: 12px 10px;
+  font-size: 15px;
+  line-height: 20px;
+  border-radius: 8px;
+}
+#lang a:hover {
+  background: rgba(2, 32, 71, 0.0509803922);
+}
+#lang li:first-child a {
+  color: #333d4b;
+}
+#lang li:last-child a {
+  color: #b0b8c1;
+}
+#lang li:nth-child(2) {
+  padding: 10px 0;
+  line-height: 20px;
+}
+#lang span {
+  color: #d1d6d8;
+  font-size: 13px;
+}
+
+#main_view {
+  position: relative;
+}
+#main_view .bg {
+  width: 100%;
+  height: 100vh;
+}
+#main_view .bg img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main_view .bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(white, #fff 59px, rgba(255, 255, 255, 0));
+}
+#main_view .contents {
+  position: absolute;
+  top: 170px;
+  width: 100%;
+  text-align: center;
+}
+#main_view .contents h2 {
+  font-size: 66px;
+  line-height: 1.4;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+#main_view .contents ul {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+#main_view .contents a {
+  padding: 11px 16px;
+  background: rgba(0, 12, 30, 0.8);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+}
+#main_view .contents img {
+  vertical-align: -5px;
+  width: 24px;
+  margin-right: 6px;
+}/*# sourceMappingURL=style.css.map */
